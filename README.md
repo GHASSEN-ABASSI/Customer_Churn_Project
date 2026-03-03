@@ -15,7 +15,7 @@ This project follows a production-ready ML architecture including:
 - MLflow experiment tracking
 - FastAPI backend deployment
 - Docker containerization
-- (Optional) Frontend integration
+-  Frontend integration
 
 ---
 
