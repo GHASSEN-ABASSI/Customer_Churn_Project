@@ -151,6 +151,18 @@ uvicorn api.main:app --reload
 docker-compose up --build
 ```
 
+**Access your services:**
+- 📊 **API**: http://localhost:8000
+- 📚 **API Docs (Swagger UI)**: http://localhost:8000/docs  
+- 📈 **MLflow Tracking UI**: http://localhost:5000
+
+**Useful Docker commands:**
+```bash
+docker-compose logs -f api      # View API logs
+docker-compose logs -f mlflow   # View MLflow logs
+docker-compose down             # Stop all services
+```
+
 ---
 
 ## 📅 Weekly Deliverables
