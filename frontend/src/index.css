@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #11131a;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #11131a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2d3a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00f0ff;
+}
+
+.input-field {
+  @apply w-full bg-transparent border border-[#00f0ff]/30 text-white px-3 py-2 rounded-md focus:outline-none focus:border-[#00f0ff] focus:ring-1 focus:ring-[#00f0ff] text-sm transition-colors;
+}
+
+.input-label {
+  @apply block text-slate-300 text-xs font-medium mb-1;
+}
